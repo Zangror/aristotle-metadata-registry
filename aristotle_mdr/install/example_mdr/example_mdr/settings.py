@@ -107,9 +107,7 @@ ARISTOTLE_SETTINGS.update({
             #!aristotle_glossary! 'aristotle_glossary',
         ],
     "DOWNLOADERS": [
-        ('pdf', 'PDF', 'fa-file-pdf-o', 'aristotle_pdf', 'Downloads for various content types in the PDF format'),
-        ('csv-vd', 'CSV list of values', 'fa-file-excel-o', 'aristotle_mdr', 'CSV downloads for value domain codelists'),
-        ##!aristotle_ddi_utils!    ('ddi3.2','DDI 3.2','fa-file-code-o','aristotle_ddi_utils'),
+        # 'aristotle_pdf.downloader.PDFDownloader',
     ],
 })
 # Specified the agency to use when outputing items in the DDI XML format.

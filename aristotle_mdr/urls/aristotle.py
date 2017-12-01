@@ -17,7 +17,7 @@ from aristotle_mdr.contrib.generic.views import (
 from django.utils.translation import ugettext_lazy as _
 
 
-urlpatterns=[
+urlpatterns = [
     url(r'^$', TemplateView.as_view(template_name='aristotle_mdr/static/home.html'), name="home"),
     url(r'^manifest.json$', TemplateView.as_view(template_name='meta/manifest.json', content_type='application/json')),
     url(r'^robots.txt$', TemplateView.as_view(template_name='meta/robots.txt', content_type='text/plain')),
