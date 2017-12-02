@@ -13,6 +13,8 @@ urlpatterns = [
     url(r'^', include('aristotle_mdr.urls.aristotle', app_name="aristotle_mdr", namespace="aristotle")),
     url(r'^ac/', include('aristotle_mdr.contrib.autocomplete.urls', namespace="aristotle-autocomplete")),
     url(r'^', include('aristotle_mdr.contrib.healthcheck.urls', app_name="aristotle_mdr_hb", namespace="aristotle_hb")),
+    url(r'^browse/', include('aristotle_mdr.contrib.browse.urls')),
+    url(r'^help_page/', include('aristotle_mdr.contrib.help.urls', namespace="aristotle_help")),
 ]
 
 
